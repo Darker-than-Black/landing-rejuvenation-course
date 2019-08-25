@@ -1,0 +1,30 @@
+.for-whom {
+	padding-top: 5vh;
+
+	&__item {
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+
+	&__img {
+		width: 35%;
+		@media (max-width: 992px) {
+			width: 25%;
+		}
+	}
+
+	&__text {
+		margin-top: 1em;
+		font-size: 1.35em;
+		line-height: 1.2;
+		margin-left: 2vw;
+		margin-right: 2vw;
+
+		@media (max-width: 992px) {
+			font-size: 1em;
+			padding-left: 16vw;
+			padding-right: 16vw;
+			margin: 0;
+		}	
+	}
+}

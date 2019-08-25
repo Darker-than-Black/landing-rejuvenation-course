@@ -1,0 +1,44 @@
+@import "base", "header", "for_whom", 
+"advantage", "how_work", "descript",
+ "price", "guarantee", "author", "benefits",
+ "effect", "young";
+
+.pt-5 {
+	padding-top: 5.6vh;
+
+	@media (max-width: 1024px) {
+		padding-top: 2vh !important;
+	}
+}
+
+.pt-4 {
+	padding-top: 4vh !important;
+
+	> .col-12 {
+		@media (max-width:  1024px) {
+			align-items: flex-end;
+		}
+	}
+}
+
+.plr-4 {
+	padding-left: 4.25vw;
+	padding-right: 4.25vw;
+	
+	.col-12 {
+		height: 14px;
+	}
+	
+	hr {
+		margin-bottom: 0.5em;
+	}
+}
+
+footer {
+	background: linear-gradient(180deg, #D097A5 0%, rgba(255, 255, 255, 0) 154.67%), #CDC1CF;
+	padding: 3.7vh 0;
+
+	p {
+		margin: 0;
+	}
+}

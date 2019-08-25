@@ -1,0 +1,70 @@
+.author {
+	padding-top: 5vh;
+	padding-bottom: 6.5vh;
+	
+	.section__title {
+		line-height: 1;
+	}
+
+	> .row {
+		.col-7 {
+			&:last-child {
+				@media (max-width: 1024px) {
+					padding: 0;
+				}	
+			}
+			
+		}
+	}
+
+	&__info {
+		padding-top: 4vh;
+
+		.col-12 {
+			&:first-child {
+				padding-right: 2vw;
+			}
+
+			&:last-child {
+				padding: 0;
+			}
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+
+		@media (max-width: 1024px) {
+			margin-top: 5vh;
+		}
+
+		li {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 1.25em;
+			font-size: 1.105em;
+			line-height: 1.2;
+
+			@media (max-width: 1024px) {
+			font-size: 0.9em;
+			}
+
+
+		    &:before {
+		    	content: "";
+			    display: inline-block;
+			    width: 1.25em;
+			    height: 1.25em;
+			    flex: 0 0 1.25em;
+			    background-image: url("../imgs/Star_blue.svg");
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    margin-right: 0.75em;
+			    margin-top: 0.2em;
+		    }
+		}
+	}
+}
